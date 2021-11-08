@@ -20,12 +20,17 @@ namespace FinalDesarrollo.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return Redirect("https://localhost:5001/swagger");
         }
 
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        public IActionResult API()
+        {
+            return Redirect("https://localhost:5001/swagger");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
